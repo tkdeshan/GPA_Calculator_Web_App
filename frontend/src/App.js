@@ -10,8 +10,8 @@ import DisplayGPA from './components/DisplayGPA';
 function App() {
   return (
     <div className='bg-primary'>
-      <div className="container col-md-6 bg-black rounded p-3">
-        <nav class="navbar rounded">
+      <div className="container col-md-6 bg-black p-2">
+        <nav class="navbar">
           <div class="container-fluid justify-content-center">
           <h1 className="navbar-brand" style={{ color: 'white' }}>GPA Calculator</h1>
           </div>

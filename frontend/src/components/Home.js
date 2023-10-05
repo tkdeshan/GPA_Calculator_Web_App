@@ -34,23 +34,28 @@ function Home() {
   };
 
   return (
-    <div className="d-flex bg-primary justify-content-center align-items-center">
-      <div className="col-md-6 bg-white rounded p-3">
-        <button className='btn btn-danger' onClick={(e) => handleDeleteAll()}>Reset</button>
-        <Link to="/create" className="btn btn-success">
+    <div className="d-flex bg-primary justify-content-center align-items-center ">
+      <div className="col-md-6 bg-white p-5 mb-5">
+        <button
+          className="btn btn-danger mx-1"
+          onClick={(e) => handleDeleteAll()}
+        >
+          Reset
+        </button>
+        <Link to="/create" className="btn btn-success mx-1">
           Add +
         </Link>
-        <Link to="/calculate" className="btn btn-success">
+        <Link to="/calculate" className="btn btn-success mx-1">
           Calculate GPA
         </Link>
-        <div className="table-responsive">
+        <div className="table-responsive mt-3">
           <table className="table">
             <thead>
               <tr>
-                <th>Subject Code</th>
-                <th>Subject Name</th>
-                <th>Grade</th>
-                <th>Action</th>
+                <th style={{ backgroundColor: 'lightpink' }}>Subject Code</th>
+                <th style={{ backgroundColor: 'lightpink' }}>Subject Name</th>
+                <th style={{ backgroundColor: 'lightpink' }}>Grade</th>
+                <th style={{ backgroundColor: 'lightpink' }}>Action</th>
               </tr>
             </thead>
             <tbody>
@@ -58,6 +63,9 @@ function Home() {
                 <td style={{ backgroundColor: 'lightblue' }}>
                   1 year | 1 semester
                 </td>
+                <td style={{ backgroundColor: 'lightblue' }}></td>
+                <td style={{ backgroundColor: 'lightblue' }}></td>
+                <td style={{ backgroundColor: 'lightblue' }}></td>
               </tr>
             </tbody>
             <tbody>
@@ -67,22 +75,28 @@ function Home() {
                 )
                 .map((subject) => (
                   <tr key={subject._id}>
-                    <td>{subject.subCode}</td>
-                    <td>{subject.subName}</td>
-                    <td>{subject.grade}</td>
-                    <td>
-                    <Link
+                    <td style={{ backgroundColor: 'lightyellow' }}>
+                      {subject.subCode}
+                    </td>
+                    <td style={{ backgroundColor: 'lightyellow' }}>
+                      {subject.subName}
+                    </td>
+                    <td style={{ backgroundColor: 'lightyellow' }}>
+                      {subject.grade}
+                    </td>
+                    <td style={{ backgroundColor: 'lightyellow' }}>
+                      <Link
                         to={`/update/${subject._id}`}
-                        className="btn btn-success"
+                        className="btn btn-success mx-1"
                       >
                         Update
                       </Link>
                       <button
-                      className="btn btn-danger"
-                      onClick={(e) => handleDelete(subject._id)}
-                    >
-                      Delete
-                    </button>
+                        className="btn btn-danger mx-1"
+                        onClick={(e) => handleDelete(subject._id)}
+                      >
+                        Delete
+                      </button>
                     </td>
                   </tr>
                 ))}
@@ -92,6 +106,9 @@ function Home() {
                 <td style={{ backgroundColor: 'lightblue' }}>
                   1 year | 2 semester
                 </td>
+                <td style={{ backgroundColor: 'lightblue' }}></td>
+                <td style={{ backgroundColor: 'lightblue' }}></td>
+                <td style={{ backgroundColor: 'lightblue' }}></td>
               </tr>
             </tbody>
             <tbody>
@@ -101,22 +118,28 @@ function Home() {
                 )
                 .map((subject) => (
                   <tr key={subject._id}>
-                    <td>{subject.subCode}</td>
-                    <td>{subject.subName}</td>
-                    <td>{subject.grade}</td>
-                    <td>
-                    <Link
+                    <td style={{ backgroundColor: 'lightyellow' }}>
+                      {subject.subCode}
+                    </td>
+                    <td style={{ backgroundColor: 'lightyellow' }}>
+                      {subject.subName}
+                    </td>
+                    <td style={{ backgroundColor: 'lightyellow' }}>
+                      {subject.grade}
+                    </td>
+                    <td style={{ backgroundColor: 'lightyellow' }}>
+                      <Link
                         to={`/update/${subject._id}`}
-                        className="btn btn-success"
+                        className="btn btn-success mx-1"
                       >
                         Update
                       </Link>
                       <button
-                      className="btn btn-danger"
-                      onClick={(e) => handleDelete(subject._id)}
-                    >
-                      Delete
-                    </button>
+                        className="btn btn-danger mx-1"
+                        onClick={(e) => handleDelete(subject._id)}
+                      >
+                        Delete
+                      </button>
                     </td>
                   </tr>
                 ))}
@@ -126,6 +149,9 @@ function Home() {
                 <td style={{ backgroundColor: 'lightblue' }}>
                   2 year | 1 semester
                 </td>
+                <td style={{ backgroundColor: 'lightblue' }}></td>
+                <td style={{ backgroundColor: 'lightblue' }}></td>
+                <td style={{ backgroundColor: 'lightblue' }}></td>
               </tr>
             </tbody>
             <tbody>
@@ -135,22 +161,28 @@ function Home() {
                 )
                 .map((subject) => (
                   <tr key={subject._id}>
-                    <td>{subject.subCode}</td>
-                    <td>{subject.subName}</td>
-                    <td>{subject.grade}</td>
-                    <td>
-                    <Link
+                    <td style={{ backgroundColor: 'lightyellow' }}>
+                      {subject.subCode}
+                    </td>
+                    <td style={{ backgroundColor: 'lightyellow' }}>
+                      {subject.subName}
+                    </td>
+                    <td style={{ backgroundColor: 'lightyellow' }}>
+                      {subject.grade}
+                    </td>
+                    <td style={{ backgroundColor: 'lightyellow' }}>
+                      <Link
                         to={`/update/${subject._id}`}
-                        className="btn btn-success"
+                        className="btn btn-success mx-1"
                       >
                         Update
                       </Link>
                       <button
-                      className="btn btn-danger"
-                      onClick={(e) => handleDelete(subject._id)}
-                    >
-                      Delete
-                    </button>
+                        className="btn btn-danger mx-1"
+                        onClick={(e) => handleDelete(subject._id)}
+                      >
+                        Delete
+                      </button>
                     </td>
                   </tr>
                 ))}
@@ -160,6 +192,9 @@ function Home() {
                 <td style={{ backgroundColor: 'lightblue' }}>
                   2 year | 2 semester
                 </td>
+                <td style={{ backgroundColor: 'lightblue' }}></td>
+                <td style={{ backgroundColor: 'lightblue' }}></td>
+                <td style={{ backgroundColor: 'lightblue' }}></td>
               </tr>
             </tbody>
             <tbody>
@@ -169,22 +204,28 @@ function Home() {
                 )
                 .map((subject) => (
                   <tr key={subject._id}>
-                    <td>{subject.subCode}</td>
-                    <td>{subject.subName}</td>
-                    <td>{subject.grade}</td>
+                    <td style={{ backgroundColor: 'lightyellow' }}>
+                      {subject.subCode}
+                    </td>
+                    <td style={{ backgroundColor: 'lightyellow' }}>
+                      {subject.subName}
+                    </td>
+                    <td style={{ backgroundColor: 'lightyellow' }}>
+                      {subject.grade}
+                    </td>
                     <td>
-                    <Link
+                      <Link
                         to={`/update/${subject._id}`}
-                        className="btn btn-success"
+                        className="btn btn-success mx-1"
                       >
                         Update
                       </Link>
                       <button
-                      className="btn btn-danger"
-                      onClick={(e) => handleDelete(subject._id)}
-                    >
-                      Delete
-                    </button>
+                        className="btn btn-danger mx-1"
+                        onClick={(e) => handleDelete(subject._id)}
+                      >
+                        Delete
+                      </button>
                     </td>
                   </tr>
                 ))}
@@ -194,6 +235,9 @@ function Home() {
                 <td style={{ backgroundColor: 'lightblue' }}>
                   3 year | 1 semester
                 </td>
+                <td style={{ backgroundColor: 'lightblue' }}></td>
+                <td style={{ backgroundColor: 'lightblue' }}></td>
+                <td style={{ backgroundColor: 'lightblue' }}></td>
               </tr>
             </tbody>
             <tbody>
@@ -203,22 +247,28 @@ function Home() {
                 )
                 .map((subject) => (
                   <tr key={subject._id}>
-                    <td>{subject.subCode}</td>
-                    <td>{subject.subName}</td>
-                    <td>{subject.grade}</td>
-                    <td>
-                    <Link
+                    <td style={{ backgroundColor: 'lightyellow' }}>
+                      {subject.subCode}
+                    </td>
+                    <td style={{ backgroundColor: 'lightyellow' }}>
+                      {subject.subName}
+                    </td>
+                    <td style={{ backgroundColor: 'lightyellow' }}>
+                      {subject.grade}
+                    </td>
+                    <td style={{ backgroundColor: 'lightyellow' }}>
+                      <Link
                         to={`/update/${subject._id}`}
-                        className="btn btn-success"
+                        className="btn btn-success mx-1"
                       >
                         Update
                       </Link>
                       <button
-                      className="btn btn-danger"
-                      onClick={(e) => handleDelete(subject._id)}
-                    >
-                      Delete
-                    </button>
+                        className="btn btn-danger mx-1"
+                        onClick={(e) => handleDelete(subject._id)}
+                      >
+                        Delete
+                      </button>
                     </td>
                   </tr>
                 ))}
@@ -228,6 +278,9 @@ function Home() {
                 <td style={{ backgroundColor: 'lightblue' }}>
                   3 year | 2 semester
                 </td>
+                <td style={{ backgroundColor: 'lightblue' }}></td>
+                <td style={{ backgroundColor: 'lightblue' }}></td>
+                <td style={{ backgroundColor: 'lightblue' }}></td>
               </tr>
             </tbody>
             <tbody>
@@ -237,22 +290,28 @@ function Home() {
                 )
                 .map((subject) => (
                   <tr key={subject._id}>
-                    <td>{subject.subCode}</td>
-                    <td>{subject.subName}</td>
-                    <td>{subject.grade}</td>
-                    <td>
-                    <Link
+                    <td style={{ backgroundColor: 'lightyellow' }}>
+                      {subject.subCode}
+                    </td>
+                    <td style={{ backgroundColor: 'lightyellow' }}>
+                      {subject.subName}
+                    </td>
+                    <td style={{ backgroundColor: 'lightyellow' }}>
+                      {subject.grade}
+                    </td>
+                    <td style={{ backgroundColor: 'lightyellow' }}>
+                      <Link
                         to={`/update/${subject._id}`}
-                        className="btn btn-success"
+                        className="btn btn-success mx-1"
                       >
                         Update
                       </Link>
                       <button
-                      className="btn btn-danger"
-                      onClick={(e) => handleDelete(subject._id)}
-                    >
-                      Delete
-                    </button>
+                        className="btn btn-danger mx-1"
+                        onClick={(e) => handleDelete(subject._id)}
+                      >
+                        Delete
+                      </button>
                     </td>
                   </tr>
                 ))}
@@ -262,6 +321,9 @@ function Home() {
                 <td style={{ backgroundColor: 'lightblue' }}>
                   4 year | 1 semester
                 </td>
+                <td style={{ backgroundColor: 'lightblue' }}></td>
+                <td style={{ backgroundColor: 'lightblue' }}></td>
+                <td style={{ backgroundColor: 'lightblue' }}></td>
               </tr>
             </tbody>
             <tbody>
@@ -271,22 +333,28 @@ function Home() {
                 )
                 .map((subject) => (
                   <tr key={subject._id}>
-                    <td>{subject.subCode}</td>
-                    <td>{subject.subName}</td>
-                    <td>{subject.grade}</td>
-                    <td>
-                    <Link
+                    <td style={{ backgroundColor: 'lightyellow' }}>
+                      {subject.subCode}
+                    </td>
+                    <td style={{ backgroundColor: 'lightyellow' }}>
+                      {subject.subName}
+                    </td>
+                    <td style={{ backgroundColor: 'lightyellow' }}>
+                      {subject.grade}
+                    </td>
+                    <td style={{ backgroundColor: 'lightyellow' }}>
+                      <Link
                         to={`/update/${subject._id}`}
-                        className="btn btn-success"
+                        className="btn btn-success mx-1"
                       >
                         Update
                       </Link>
                       <button
-                      className="btn btn-danger"
-                      onClick={(e) => handleDelete(subject._id)}
-                    >
-                      Delete
-                    </button>
+                        className="btn btn-danger mx-1"
+                        onClick={(e) => handleDelete(subject._id)}
+                      >
+                        Delete
+                      </button>
                     </td>
                   </tr>
                 ))}
@@ -296,6 +364,9 @@ function Home() {
                 <td style={{ backgroundColor: 'lightblue' }}>
                   4 year | 2 semester
                 </td>
+                <td style={{ backgroundColor: 'lightblue' }}></td>
+                <td style={{ backgroundColor: 'lightblue' }}></td>
+                <td style={{ backgroundColor: 'lightblue' }}></td>
               </tr>
             </tbody>
             <tbody>
@@ -305,22 +376,28 @@ function Home() {
                 )
                 .map((subject) => (
                   <tr key={subject._id}>
-                    <td>{subject.subCode}</td>
-                    <td>{subject.subName}</td>
-                    <td>{subject.grade}</td>
-                    <td>
+                    <td style={{ backgroundColor: 'lightyellow' }}>
+                      {subject.subCode}
+                    </td>
+                    <td style={{ backgroundColor: 'lightyellow' }}>
+                      {subject.subName}
+                    </td>
+                    <td style={{ backgroundColor: 'lightyellow' }}>
+                      {subject.grade}
+                    </td>
+                    <td style={{ backgroundColor: 'lightyellow' }}>
                       <Link
                         to={`/update/${subject._id}`}
-                        className="btn btn-success"
+                        className="btn btn-success mx-1"
                       >
                         Update
                       </Link>
                       <button
-                      className="btn btn-danger"
-                      onClick={(e) => handleDelete(subject._id)}
-                    >
-                      Delete
-                    </button>
+                        className="btn btn-danger mx-1"
+                        onClick={(e) => handleDelete(subject._id)}
+                      >
+                        Delete
+                      </button>
                     </td>
                   </tr>
                 ))}

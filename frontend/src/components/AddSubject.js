@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function AddSubject() {
   const BaseURL = 'http://localhost:5000';
@@ -10,7 +10,6 @@ function AddSubject() {
   const [year, setYear] = useState();
   const [semester, setSemester] = useState();
   const [grade, setGrade] = useState();
-  const navigate = useNavigate();
 
   const Submit = (e) => {
     e.preventDefault();
@@ -24,15 +23,14 @@ function AddSubject() {
         grade,
       })
       .then((result) => {
-        console.log(result);
-        navigate('/');
+        window.location.reload();
       })
       .catch((err) => console.log(err));
   };
 
   return (
-    <div className="d-flex vh-100 bg-primary justify-content-center align-items-center">
-      <div className="w-50 bg-white rounded p-3">
+    <div className="d-flex vh-95 bg-primary justify-content-center ">
+      <div className="w-50 bg-white p-5 mb-5">
         <form onSubmit={Submit}>
           <h2>Add Subject</h2>
           <div className="mb-2">
@@ -61,7 +59,11 @@ function AddSubject() {
           </div>
           <div className="mb-2">
             <label>Year</label>
-            <select class="form-select" aria-label="Default select example" onChange={(e) => setYear(e.target.value)}>
+            <select
+              class="form-select"
+              aria-label="Default select example"
+              onChange={(e) => setYear(e.target.value)}
+            >
               <option selected>Select year</option>
               <option value="1">One</option>
               <option value="2">Two</option>
@@ -71,7 +73,11 @@ function AddSubject() {
           </div>
           <div className="mb-2">
             <label>Semester</label>
-            <select class="form-select" aria-label="Default select example" onChange={(e) => setSemester(e.target.value)}>
+            <select
+              class="form-select"
+              aria-label="Default select example"
+              onChange={(e) => setSemester(e.target.value)}
+            >
               <option selected>Select semester</option>
               <option value="1">One</option>
               <option value="2">Two</option>
@@ -79,7 +85,11 @@ function AddSubject() {
           </div>
           <div className="mb-2">
             <label>Grade</label>
-            <select class="form-select" aria-label="Default select example" onChange={(e) => setGrade(e.target.value)}>
+            <select
+              class="form-select"
+              aria-label="Default select example"
+              onChange={(e) => setGrade(e.target.value)}
+            >
               <option selected>Select grade</option>
               <option value="A+">A+</option>
               <option value="A">A</option>
@@ -95,7 +105,12 @@ function AddSubject() {
               <option value="E">E</option>
             </select>
           </div>
-          <button className="btn btn-success">Submit</button>
+          <div className="d-flex justify-content-end">
+            <Link to="/" className="btn btn-success mx-1">
+              Back
+            </Link>
+            <button className="btn btn-success mx-1">Submit</button>
+          </div>
         </form>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
 
 function UpdateSubject() {
@@ -47,8 +47,8 @@ function UpdateSubject() {
   };
 
   return (
-    <div className="d-flex vh-100 bg-primary justify-content-center align-items-center">
-      <div className="w-50 bg-white rounded p-3">
+    <div className="d-flex  bg-primary justify-content-center">
+      <div className="w-50 bg-white p-5 mb-5">
         <form onSubmit={Update}>
           <h2>Add Subject</h2>
           <div className="mb-2">
@@ -80,7 +80,12 @@ function UpdateSubject() {
           </div>
           <div className="mb-2">
             <label>Year</label>
-            <select class="form-select" aria-label="Default select example"  value={year} onChange={(e) => setYear(e.target.value)}>
+            <select
+              class="form-select"
+              aria-label="Default select example"
+              value={year}
+              onChange={(e) => setYear(e.target.value)}
+            >
               <option selected>Select year</option>
               <option value="1">One</option>
               <option value="2">Two</option>
@@ -90,7 +95,12 @@ function UpdateSubject() {
           </div>
           <div className="mb-2">
             <label>Semester</label>
-            <select class="form-select" aria-label="Default select example"  value={semester} onChange={(e) => setSemester(e.target.value)}>
+            <select
+              class="form-select"
+              aria-label="Default select example"
+              value={semester}
+              onChange={(e) => setSemester(e.target.value)}
+            >
               <option selected>Select semester</option>
               <option value="1">One</option>
               <option value="2">Two</option>
@@ -98,7 +108,12 @@ function UpdateSubject() {
           </div>
           <div className="mb-2">
             <label>Grade</label>
-            <select class="form-select" aria-label="Default select example"  value={grade} onChange={(e) => setGrade(e.target.value)}>
+            <select
+              class="form-select"
+              aria-label="Default select example"
+              value={grade}
+              onChange={(e) => setGrade(e.target.value)}
+            >
               <option selected>Select grade</option>
               <option value="A+">A+</option>
               <option value="A">A</option>
@@ -114,7 +129,12 @@ function UpdateSubject() {
               <option value="E">E</option>
             </select>
           </div>
-          <button className="btn btn-success">Update</button>
+          <div className="d-flex justify-content-end">
+            <Link to="/" className="btn btn-success mx-1">
+              Back
+            </Link>
+            <button className="btn btn-success mx-1">Update</button>
+          </div>
         </form>
       </div>
     </div>

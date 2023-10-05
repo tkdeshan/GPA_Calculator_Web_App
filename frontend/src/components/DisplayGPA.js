@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 function DisplayGPA() {
   const BaseURL = 'http://localhost:5000';
@@ -60,12 +61,17 @@ function DisplayGPA() {
   const GPA = totalWeightedGradePoints / totalCredits;
 
   return (
-    <div className="d-flex vh-100 bg-primary justify-content-center align-items-center">
-      <div className="col-md-6 bg-white rounded p-3">
+    <div className="d-flex  bg-primary justify-content-center ">
+      <div className="col-md-6 bg-white p-5 mb-5 ">
         <div>
           <p>Total Subjects : {totalSubjects}</p>
           <p>Total Credit : {totalCredits}</p>
           <p>GPA : {GPA.toFixed(2)}</p>
+        </div>
+        <div className="d-flex justify-content-end">
+        <Link to="/" className="btn btn-success">
+          Go Home
+        </Link>
         </div>
       </div>
     </div>
