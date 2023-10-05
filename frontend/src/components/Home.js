@@ -29,7 +29,11 @@ function Home() {
                 <th>Action</th>
               </tr>
             </thead>
-            <p class="fw-semibold">1 year | 1 semester</p>
+            <tbody>
+              <tr>
+                <td style={{ backgroundColor: 'lightblue' }}>1 year | 1 semester</td>
+              </tr>
+            </tbody>
             <tbody>
               {subjects
                 .filter(
@@ -47,7 +51,11 @@ function Home() {
                   </tr>
                 ))}
             </tbody>
-            <p class="fw-semibold">1 year | 2 semester</p>
+            <tbody>
+              <tr>
+                <td style={{ backgroundColor: 'lightblue' }}>1 year | 2 semester</td>
+              </tr>
+            </tbody>
             <tbody>
               {subjects
                 .filter(
@@ -65,7 +73,11 @@ function Home() {
                   </tr>
                 ))}
             </tbody>
-            <p class="fw-semibold">2 year | 1 semester</p>
+            <tbody>
+              <tr>
+                <td style={{ backgroundColor: 'lightblue' }}>2 year | 1 semester</td>
+              </tr>
+            </tbody>
             <tbody>
               {subjects
                 .filter(
@@ -83,7 +95,11 @@ function Home() {
                   </tr>
                 ))}
             </tbody>
-            <p class="fw-semibold">2 year | 2 semester</p>
+            <tbody>
+              <tr>
+                <td style={{ backgroundColor: 'lightblue' }}>2 year | 2 semester</td>
+              </tr>
+            </tbody>
             <tbody>
               {subjects
                 .filter(
@@ -101,7 +117,11 @@ function Home() {
                   </tr>
                 ))}
             </tbody>
-            <p class="fw-semibold">3 year | 1 semester</p>
+            <tbody>
+              <tr>
+                <td style={{ backgroundColor: 'lightblue' }}>3 year | 1 semester</td>
+              </tr>
+            </tbody>
             <tbody>
               {subjects
                 .filter(
@@ -119,7 +139,11 @@ function Home() {
                   </tr>
                 ))}
             </tbody>
-            <p class="fw-semibold">3 year | 2 semester</p>
+            <tbody>
+              <tr>
+                <td style={{ backgroundColor: 'lightblue' }}>3 year | 2 semester</td>
+              </tr>
+            </tbody>
             <tbody>
               {subjects
                 .filter(
@@ -137,7 +161,11 @@ function Home() {
                   </tr>
                 ))}
             </tbody>
-            <p class="fw-semibold">4 year | 1 semester</p>
+            <tbody>
+              <tr>
+                <td style={{ backgroundColor: 'lightblue' }}>4 year | 1 semester</td>
+              </tr>
+            </tbody>
             <tbody>
               {subjects
                 .filter(
@@ -155,7 +183,11 @@ function Home() {
                   </tr>
                 ))}
             </tbody>
-            <p class="fw-semibold">4 year | 2 semester</p>
+            <tbody>
+              <tr>
+                <td style={{ backgroundColor: 'lightblue' }}>4 year | 2 semester</td>
+              </tr>
+            </tbody>
             <tbody>
               {subjects
                 .filter(
