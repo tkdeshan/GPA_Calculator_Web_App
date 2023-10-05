@@ -3,7 +3,7 @@ import { useParams, useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
 
 function UpdateSubject() {
-  const BaseURL = 'https://gpa-calculator-web-app-backend.vercel.app/';
+  const BaseURL = 'https://gpa-calculator-web-app-backend.vercel.app';
   const { id } = useParams();
   const [subCode, setSubCode] = useState();
   const [subName, setSubName] = useState();
