@@ -80,8 +80,8 @@ function DisplayGPA() {
         <div>
           <p>Total Subjects : {totalSubjects}</p>
           <p>Total Credit : {totalCredits}</p>
-          <p>GPA : {GPA.toFixed(2)}</p>
-          <p style={{ color: 'red' }}>Class: {className}</p>
+          <p>GPA : <span style={{ color: 'red' }}>{GPA.toFixed(2)}</span></p>
+          <p >Class: <span style={{ color: 'red' }}>{className}</span></p>
         </div>
         <div className="d-flex justify-content-end">
           <Link to="/" className="btn btn-success">
