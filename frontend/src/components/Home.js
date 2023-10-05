@@ -54,8 +54,12 @@ function Home() {
               <tr>
                 <th style={{ backgroundColor: 'lightpink' }}>Subject Code</th>
                 <th style={{ backgroundColor: 'lightpink' }}>Subject Name</th>
-                <th style={{ backgroundColor: 'lightpink' }}>Grade</th>
-                <th style={{ backgroundColor: 'lightpink' }}>Action</th>
+                <th style={{ backgroundColor: 'lightpink', textAlign: 'center' }}>Grade</th>
+                <th
+                  style={{ backgroundColor: 'lightpink', textAlign: 'center' }}
+                >
+                  Action
+                </th>
               </tr>
             </thead>
             <tbody>
@@ -81,10 +85,20 @@ function Home() {
                     <td style={{ backgroundColor: 'lightyellow' }}>
                       {subject.subName}
                     </td>
-                    <td style={{ backgroundColor: 'lightyellow' }}>
+                    <td
+                      style={{
+                        backgroundColor: 'lightyellow',
+                        textAlign: 'center',
+                      }}
+                    >
                       {subject.grade}
                     </td>
-                    <td style={{ backgroundColor: 'lightyellow' }}>
+                    <td
+                      style={{
+                        backgroundColor: 'lightyellow',
+                        textAlign: 'center',
+                      }}
+                    >
                       <Link
                         to={`/update/${subject._id}`}
                         className="btn btn-success mx-1"
@@ -124,10 +138,20 @@ function Home() {
                     <td style={{ backgroundColor: 'lightyellow' }}>
                       {subject.subName}
                     </td>
-                    <td style={{ backgroundColor: 'lightyellow' }}>
+                    <td
+                      style={{
+                        backgroundColor: 'lightyellow',
+                        textAlign: 'center',
+                      }}
+                    >
                       {subject.grade}
                     </td>
-                    <td style={{ backgroundColor: 'lightyellow' }}>
+                    <td
+                      style={{
+                        backgroundColor: 'lightyellow',
+                        textAlign: 'center',
+                      }}
+                    >
                       <Link
                         to={`/update/${subject._id}`}
                         className="btn btn-success mx-1"
@@ -167,10 +191,20 @@ function Home() {
                     <td style={{ backgroundColor: 'lightyellow' }}>
                       {subject.subName}
                     </td>
-                    <td style={{ backgroundColor: 'lightyellow' }}>
+                    <td
+                      style={{
+                        backgroundColor: 'lightyellow',
+                        textAlign: 'center',
+                      }}
+                    >
                       {subject.grade}
                     </td>
-                    <td style={{ backgroundColor: 'lightyellow' }}>
+                    <td
+                      style={{
+                        backgroundColor: 'lightyellow',
+                        textAlign: 'center',
+                      }}
+                    >
                       <Link
                         to={`/update/${subject._id}`}
                         className="btn btn-success mx-1"
@@ -210,10 +244,20 @@ function Home() {
                     <td style={{ backgroundColor: 'lightyellow' }}>
                       {subject.subName}
                     </td>
-                    <td style={{ backgroundColor: 'lightyellow' }}>
+                    <td
+                      style={{
+                        backgroundColor: 'lightyellow',
+                        textAlign: 'center',
+                      }}
+                    >
                       {subject.grade}
                     </td>
-                    <td>
+                    <td
+                      style={{
+                        backgroundColor: 'lightyellow',
+                        textAlign: 'center',
+                      }}
+                    >
                       <Link
                         to={`/update/${subject._id}`}
                         className="btn btn-success mx-1"
@@ -253,10 +297,20 @@ function Home() {
                     <td style={{ backgroundColor: 'lightyellow' }}>
                       {subject.subName}
                     </td>
-                    <td style={{ backgroundColor: 'lightyellow' }}>
+                    <td
+                      style={{
+                        backgroundColor: 'lightyellow',
+                        textAlign: 'center',
+                      }}
+                    >
                       {subject.grade}
                     </td>
-                    <td style={{ backgroundColor: 'lightyellow' }}>
+                    <td
+                      style={{
+                        backgroundColor: 'lightyellow',
+                        textAlign: 'center',
+                      }}
+                    >
                       <Link
                         to={`/update/${subject._id}`}
                         className="btn btn-success mx-1"
@@ -296,10 +350,20 @@ function Home() {
                     <td style={{ backgroundColor: 'lightyellow' }}>
                       {subject.subName}
                     </td>
-                    <td style={{ backgroundColor: 'lightyellow' }}>
+                    <td
+                      style={{
+                        backgroundColor: 'lightyellow',
+                        textAlign: 'center',
+                      }}
+                    >
                       {subject.grade}
                     </td>
-                    <td style={{ backgroundColor: 'lightyellow' }}>
+                    <td
+                      style={{
+                        backgroundColor: 'lightyellow',
+                        textAlign: 'center',
+                      }}
+                    >
                       <Link
                         to={`/update/${subject._id}`}
                         className="btn btn-success mx-1"
@@ -339,10 +403,20 @@ function Home() {
                     <td style={{ backgroundColor: 'lightyellow' }}>
                       {subject.subName}
                     </td>
-                    <td style={{ backgroundColor: 'lightyellow' }}>
+                    <td
+                      style={{
+                        backgroundColor: 'lightyellow',
+                        textAlign: 'center',
+                      }}
+                    >
                       {subject.grade}
                     </td>
-                    <td style={{ backgroundColor: 'lightyellow' }}>
+                    <td
+                      style={{
+                        backgroundColor: 'lightyellow',
+                        textAlign: 'center',
+                      }}
+                    >
                       <Link
                         to={`/update/${subject._id}`}
                         className="btn btn-success mx-1"
@@ -382,10 +456,20 @@ function Home() {
                     <td style={{ backgroundColor: 'lightyellow' }}>
                       {subject.subName}
                     </td>
-                    <td style={{ backgroundColor: 'lightyellow' }}>
+                    <td
+                      style={{
+                        backgroundColor: 'lightyellow',
+                        textAlign: 'center',
+                      }}
+                    >
                       {subject.grade}
                     </td>
-                    <td style={{ backgroundColor: 'lightyellow' }}>
+                    <td
+                      style={{
+                        backgroundColor: 'lightyellow',
+                        textAlign: 'center',
+                      }}
+                    >
                       <Link
                         to={`/update/${subject._id}`}
                         className="btn btn-success mx-1"
