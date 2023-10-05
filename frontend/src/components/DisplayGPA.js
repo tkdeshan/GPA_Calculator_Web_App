@@ -60,6 +60,20 @@ function DisplayGPA() {
   // Calculate the GPA
   const GPA = totalWeightedGradePoints / totalCredits;
 
+  // Determine the class based on GPA
+  let className = '';
+  if (GPA >= 3.7) {
+    className = 'First Class';
+  } else if (GPA >= 3.3) {
+    className = 'Second Class (Upper Division)';
+  } else if (GPA >= 3.0) {
+    className = 'Second Class (Lower Division)';
+  } else if (GPA >= 2.0) {
+    className = 'General';
+  } else {
+    className = 'Fail';
+  }
+
   return (
     <div className="d-flex  bg-primary justify-content-center ">
       <div className="col-md-6 bg-white p-5 mb-5 ">
@@ -67,11 +81,12 @@ function DisplayGPA() {
           <p>Total Subjects : {totalSubjects}</p>
           <p>Total Credit : {totalCredits}</p>
           <p>GPA : {GPA.toFixed(2)}</p>
+          <p style={{ color: 'red' }}>Class: {className}</p>
         </div>
         <div className="d-flex justify-content-end">
-        <Link to="/" className="btn btn-success">
-          Go Home
-        </Link>
+          <Link to="/" className="btn btn-success">
+            Go Home
+          </Link>
         </div>
       </div>
     </div>
