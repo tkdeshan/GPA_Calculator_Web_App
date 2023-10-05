@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/Home';
 import AddSubject from './components/AddSubject';
 import UpdateSubject from './components/UpdateSubject';
+import DisplayGPA from './components/DisplayGPA';
+
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />}></Route>
+          <Route path="/calculate" element={<DisplayGPA />}></Route>
           <Route path="/create" element={<AddSubject />}></Route>
           <Route path="/update/:id" element={<UpdateSubject />}></Route>
         </Routes>

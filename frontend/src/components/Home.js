@@ -29,6 +29,9 @@ function Home() {
         <Link to="/create" className="btn btn-success">
           Add +
         </Link>
+        <Link to="/calculate" className="btn btn-success">
+          Calculate GPA
+        </Link>
         <div className="table-responsive">
           <table className="table">
             <thead>
