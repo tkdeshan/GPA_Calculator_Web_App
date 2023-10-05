@@ -30,7 +30,7 @@ function AddSubject() {
 
   return (
     <div className="d-flex vh-95 bg-primary justify-content-center ">
-      <div className="w-50 bg-white p-5 mb-5">
+      <div className=" container w-50 bg-white p-5 mb-5">
         <form onSubmit={Submit}>
           <h2>Add Subject</h2>
           <div className="mb-2">

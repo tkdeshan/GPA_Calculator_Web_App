@@ -48,9 +48,9 @@ function UpdateSubject() {
 
   return (
     <div className="d-flex  bg-primary justify-content-center">
-      <div className="w-50 bg-white p-5 mb-5">
+      <div className="container w-50 bg-white p-5 mb-5">
         <form onSubmit={Update}>
-          <h2>Add Subject</h2>
+          <h2>Update Subject</h2>
           <div className="mb-2">
             <label>Subject Code</label>
             <input
@@ -129,7 +129,7 @@ function UpdateSubject() {
               <option value="E">E</option>
             </select>
           </div>
-          <div className="d-flex justify-content-end">
+          <div className="container d-flex justify-content-end">
             <Link to="/" className="btn btn-success mx-1">
               Back
             </Link>

@@ -76,7 +76,7 @@ function DisplayGPA() {
 
   return (
     <div className="d-flex  bg-primary justify-content-center ">
-      <div className="col-md-6 bg-white p-5 mb-5 ">
+      <div className="container col-md-6 bg-white p-5 mb-5 ">
         <div>
           <p>Total Subjects : {totalSubjects}</p>
           <p>Total Credit : {totalCredits}</p>

@@ -35,7 +35,7 @@ function Home() {
 
   return (
     <div className="d-flex bg-primary justify-content-center align-items-center ">
-      <div className="col-md-6 bg-white p-5 mb-5">
+      <div className="container col-md-6 bg-white p-5 mb-5">
         <button
           className="btn btn-danger mx-1"
           onClick={(e) => handleDeleteAll()}
