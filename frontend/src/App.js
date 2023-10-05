@@ -9,13 +9,10 @@ import UpdateSubject from './components/UpdateSubject';
 function App() {
   return (
     <div className='bg-primary'>
-      <div className="container col-md-6 bg-white rounded p-3">
+      <div className="container col-md-6 bg-black rounded p-3">
         <nav class="navbar rounded">
-          <div class="container-fluid">
-            <h1 class="navbar-brand">GPA Calculator</h1>
-            <button class="btn btn-success" type="submit">
-              Add +
-            </button>
+          <div class="container-fluid justify-content-center">
+          <h1 className="navbar-brand" style={{ color: 'white' }}>GPA Calculator</h1>
           </div>
         </nav>
       </div>

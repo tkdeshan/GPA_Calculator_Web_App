@@ -16,6 +16,9 @@ function Home() {
   return (
     <div className="d-flex bg-primary justify-content-center align-items-center">
       <div className="col-md-6 bg-white rounded p-3">
+        <Link to="/create" className="btn btn-success">
+          Add +
+        </Link>
         <div className="table-responsive">
           <table className="table">
             <thead>
@@ -29,7 +32,9 @@ function Home() {
             <p class="fw-semibold">1 year | 1 semester</p>
             <tbody>
               {subjects
-                .filter((subject) => subject.year === 1 && subject.semester === 1)
+                .filter(
+                  (subject) => subject.year === 1 && subject.semester === 1
+                )
                 .map((subject) => (
                   <tr key={subject._id}>
                     <td>{subject.subCode}</td>
@@ -45,7 +50,9 @@ function Home() {
             <p class="fw-semibold">1 year | 2 semester</p>
             <tbody>
               {subjects
-                .filter((subject) => subject.year === 1 && subject.semester === 2)
+                .filter(
+                  (subject) => subject.year === 1 && subject.semester === 2
+                )
                 .map((subject) => (
                   <tr key={subject._id}>
                     <td>{subject.subCode}</td>
@@ -61,7 +68,9 @@ function Home() {
             <p class="fw-semibold">2 year | 1 semester</p>
             <tbody>
               {subjects
-                .filter((subject) => subject.year === 2 && subject.semester === 1)
+                .filter(
+                  (subject) => subject.year === 2 && subject.semester === 1
+                )
                 .map((subject) => (
                   <tr key={subject._id}>
                     <td>{subject.subCode}</td>
@@ -77,7 +86,9 @@ function Home() {
             <p class="fw-semibold">2 year | 2 semester</p>
             <tbody>
               {subjects
-                .filter((subject) => subject.year === 2 && subject.semester === 2)
+                .filter(
+                  (subject) => subject.year === 2 && subject.semester === 2
+                )
                 .map((subject) => (
                   <tr key={subject._id}>
                     <td>{subject.subCode}</td>
@@ -93,7 +104,9 @@ function Home() {
             <p class="fw-semibold">3 year | 1 semester</p>
             <tbody>
               {subjects
-                .filter((subject) => subject.year === 3 && subject.semester === 1)
+                .filter(
+                  (subject) => subject.year === 3 && subject.semester === 1
+                )
                 .map((subject) => (
                   <tr key={subject._id}>
                     <td>{subject.subCode}</td>
@@ -109,7 +122,9 @@ function Home() {
             <p class="fw-semibold">3 year | 2 semester</p>
             <tbody>
               {subjects
-                .filter((subject) => subject.year === 3 && subject.semester === 2)
+                .filter(
+                  (subject) => subject.year === 3 && subject.semester === 2
+                )
                 .map((subject) => (
                   <tr key={subject._id}>
                     <td>{subject.subCode}</td>
@@ -125,7 +140,9 @@ function Home() {
             <p class="fw-semibold">4 year | 1 semester</p>
             <tbody>
               {subjects
-                .filter((subject) => subject.year === 4 && subject.semester === 1)
+                .filter(
+                  (subject) => subject.year === 4 && subject.semester === 1
+                )
                 .map((subject) => (
                   <tr key={subject._id}>
                     <td>{subject.subCode}</td>
@@ -141,7 +158,9 @@ function Home() {
             <p class="fw-semibold">4 year | 2 semester</p>
             <tbody>
               {subjects
-                .filter((subject) => subject.year === 4 && subject.semester === 2)
+                .filter(
+                  (subject) => subject.year === 4 && subject.semester === 2
+                )
                 .map((subject) => (
                   <tr key={subject._id}>
                     <td>{subject.subCode}</td>
