@@ -114,7 +114,7 @@ function UpdateSubject() {
               <option value="E">E</option>
             </select>
           </div>
-          <button className="btn btn-success">Submit</button>
+          <button className="btn btn-success">Update</button>
         </form>
       </div>
     </div>
