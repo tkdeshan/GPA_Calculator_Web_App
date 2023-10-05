@@ -42,6 +42,13 @@ router.put('/sub/:id', (req, res) => {
     .catch((err) => res.json(err));
 });
 
+// Delete all the records
+router.delete('/sub/all', (req, res) => {
+  Subjects.deleteMany({})
+    .then((result) => res.json(result))
+    .catch((err) => res.json(err));
+});
+
 // Delete data
 router.delete('/sub/:id', (req, res) => {
   const id = req.params.id;

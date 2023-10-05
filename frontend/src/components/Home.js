@@ -23,9 +23,20 @@ function Home() {
       .catch((err) => console.log(err));
   };
 
+  const handleDeleteAll = () => {
+    axios
+      .delete(`${BaseURL}/api/sub/all`)
+      .then((res) => {
+        console.log(res);
+        window.location.reload();
+      })
+      .catch((err) => console.log(err));
+  };
+
   return (
     <div className="d-flex bg-primary justify-content-center align-items-center">
       <div className="col-md-6 bg-white rounded p-3">
+        <button className='btn btn-danger' onClick={(e) => handleDeleteAll()}>Reset</button>
         <Link to="/create" className="btn btn-success">
           Add +
         </Link>
