@@ -13,6 +13,16 @@ function Home() {
       .catch((err) => console.log(err));
   }, []);
 
+  const handleDelete = (id) => {
+    axios
+      .delete(`${BaseURL}/api/sub/${id}`)
+      .then((res) => {
+        console.log(res);
+        window.location.reload();
+      })
+      .catch((err) => console.log(err));
+  };
+
   return (
     <div className="d-flex bg-primary justify-content-center align-items-center">
       <div className="col-md-6 bg-white rounded p-3">
@@ -31,7 +41,9 @@ function Home() {
             </thead>
             <tbody>
               <tr>
-                <td style={{ backgroundColor: 'lightblue' }}>1 year | 1 semester</td>
+                <td style={{ backgroundColor: 'lightblue' }}>
+                  1 year | 1 semester
+                </td>
               </tr>
             </tbody>
             <tbody>
@@ -45,15 +57,27 @@ function Home() {
                     <td>{subject.subName}</td>
                     <td>{subject.grade}</td>
                     <td>
-                      <button>Update</button>
-                      <button>Delete</button>
+                    <Link
+                        to={`/update/${subject._id}`}
+                        className="btn btn-success"
+                      >
+                        Update
+                      </Link>
+                      <button
+                      className="btn btn-danger"
+                      onClick={(e) => handleDelete(subject._id)}
+                    >
+                      Delete
+                    </button>
                     </td>
                   </tr>
                 ))}
             </tbody>
             <tbody>
               <tr>
-                <td style={{ backgroundColor: 'lightblue' }}>1 year | 2 semester</td>
+                <td style={{ backgroundColor: 'lightblue' }}>
+                  1 year | 2 semester
+                </td>
               </tr>
             </tbody>
             <tbody>
@@ -67,15 +91,27 @@ function Home() {
                     <td>{subject.subName}</td>
                     <td>{subject.grade}</td>
                     <td>
-                      <button>Update</button>
-                      <button>Delete</button>
+                    <Link
+                        to={`/update/${subject._id}`}
+                        className="btn btn-success"
+                      >
+                        Update
+                      </Link>
+                      <button
+                      className="btn btn-danger"
+                      onClick={(e) => handleDelete(subject._id)}
+                    >
+                      Delete
+                    </button>
                     </td>
                   </tr>
                 ))}
             </tbody>
             <tbody>
               <tr>
-                <td style={{ backgroundColor: 'lightblue' }}>2 year | 1 semester</td>
+                <td style={{ backgroundColor: 'lightblue' }}>
+                  2 year | 1 semester
+                </td>
               </tr>
             </tbody>
             <tbody>
@@ -89,15 +125,27 @@ function Home() {
                     <td>{subject.subName}</td>
                     <td>{subject.grade}</td>
                     <td>
-                      <button>Update</button>
-                      <button>Delete</button>
+                    <Link
+                        to={`/update/${subject._id}`}
+                        className="btn btn-success"
+                      >
+                        Update
+                      </Link>
+                      <button
+                      className="btn btn-danger"
+                      onClick={(e) => handleDelete(subject._id)}
+                    >
+                      Delete
+                    </button>
                     </td>
                   </tr>
                 ))}
             </tbody>
             <tbody>
               <tr>
-                <td style={{ backgroundColor: 'lightblue' }}>2 year | 2 semester</td>
+                <td style={{ backgroundColor: 'lightblue' }}>
+                  2 year | 2 semester
+                </td>
               </tr>
             </tbody>
             <tbody>
@@ -111,15 +159,27 @@ function Home() {
                     <td>{subject.subName}</td>
                     <td>{subject.grade}</td>
                     <td>
-                      <button>Update</button>
-                      <button>Delete</button>
+                    <Link
+                        to={`/update/${subject._id}`}
+                        className="btn btn-success"
+                      >
+                        Update
+                      </Link>
+                      <button
+                      className="btn btn-danger"
+                      onClick={(e) => handleDelete(subject._id)}
+                    >
+                      Delete
+                    </button>
                     </td>
                   </tr>
                 ))}
             </tbody>
             <tbody>
               <tr>
-                <td style={{ backgroundColor: 'lightblue' }}>3 year | 1 semester</td>
+                <td style={{ backgroundColor: 'lightblue' }}>
+                  3 year | 1 semester
+                </td>
               </tr>
             </tbody>
             <tbody>
@@ -133,15 +193,27 @@ function Home() {
                     <td>{subject.subName}</td>
                     <td>{subject.grade}</td>
                     <td>
-                      <button>Update</button>
-                      <button>Delete</button>
+                    <Link
+                        to={`/update/${subject._id}`}
+                        className="btn btn-success"
+                      >
+                        Update
+                      </Link>
+                      <button
+                      className="btn btn-danger"
+                      onClick={(e) => handleDelete(subject._id)}
+                    >
+                      Delete
+                    </button>
                     </td>
                   </tr>
                 ))}
             </tbody>
             <tbody>
               <tr>
-                <td style={{ backgroundColor: 'lightblue' }}>3 year | 2 semester</td>
+                <td style={{ backgroundColor: 'lightblue' }}>
+                  3 year | 2 semester
+                </td>
               </tr>
             </tbody>
             <tbody>
@@ -155,15 +227,27 @@ function Home() {
                     <td>{subject.subName}</td>
                     <td>{subject.grade}</td>
                     <td>
-                      <button>Update</button>
-                      <button>Delete</button>
+                    <Link
+                        to={`/update/${subject._id}`}
+                        className="btn btn-success"
+                      >
+                        Update
+                      </Link>
+                      <button
+                      className="btn btn-danger"
+                      onClick={(e) => handleDelete(subject._id)}
+                    >
+                      Delete
+                    </button>
                     </td>
                   </tr>
                 ))}
             </tbody>
             <tbody>
               <tr>
-                <td style={{ backgroundColor: 'lightblue' }}>4 year | 1 semester</td>
+                <td style={{ backgroundColor: 'lightblue' }}>
+                  4 year | 1 semester
+                </td>
               </tr>
             </tbody>
             <tbody>
@@ -177,15 +261,27 @@ function Home() {
                     <td>{subject.subName}</td>
                     <td>{subject.grade}</td>
                     <td>
-                      <button>Update</button>
-                      <button>Delete</button>
+                    <Link
+                        to={`/update/${subject._id}`}
+                        className="btn btn-success"
+                      >
+                        Update
+                      </Link>
+                      <button
+                      className="btn btn-danger"
+                      onClick={(e) => handleDelete(subject._id)}
+                    >
+                      Delete
+                    </button>
                     </td>
                   </tr>
                 ))}
             </tbody>
             <tbody>
               <tr>
-                <td style={{ backgroundColor: 'lightblue' }}>4 year | 2 semester</td>
+                <td style={{ backgroundColor: 'lightblue' }}>
+                  4 year | 2 semester
+                </td>
               </tr>
             </tbody>
             <tbody>
@@ -199,8 +295,18 @@ function Home() {
                     <td>{subject.subName}</td>
                     <td>{subject.grade}</td>
                     <td>
-                      <button>Update</button>
-                      <button>Delete</button>
+                      <Link
+                        to={`/update/${subject._id}`}
+                        className="btn btn-success"
+                      >
+                        Update
+                      </Link>
+                      <button
+                      className="btn btn-danger"
+                      onClick={(e) => handleDelete(subject._id)}
+                    >
+                      Delete
+                    </button>
                     </td>
                   </tr>
                 ))}
