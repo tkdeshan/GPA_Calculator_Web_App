@@ -48,8 +48,6 @@ The web app is live on : https://gpa-calculator-web-app-frontend.vercel.app/
     ```bash
    npm start
 
-4. Now, the app is running by getting data on my hosted server. Replace `http://localhost:5000` in the BaseURL variable in the component files to connect the frontend to your local server.
-
 ### Backend
 
 1. Navigate to the backend directory:
