@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 
 function DisplayGPA() {
-  const BaseURL = 'https://gpa-calculator-web-app-backend.vercel.app';
+  const BaseURL = 'http://localhost:5000';
   const [subjects, setSujects] = useState([]);
 
   useEffect(() => {
