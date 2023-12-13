@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 
 function AddSubject() {
-  const BaseURL = 'http://localhost:5000';
+  const BaseURL = 'https://gpa-calculator-web-app-backend.vercel.app';
   const [subCode, setSubCode] = useState();
   const [subName, setSubName] = useState();
   const [credit, setCredit] = useState();
